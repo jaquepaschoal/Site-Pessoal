@@ -1,17 +1,20 @@
 /*!
- * fastshell
- * Fiercely quick and opinionated front-ends
- * https://HosseinKarami.github.io/fastshell
- * @author Hossein Karami
- * @version 1.0.5
- * Copyright 2018. MIT licensed.
+ * 
+ * 
+ * 
+ * @author 
+ * @version 
+ * Copyright 2018.  licensed.
  */
-(function ($, window, document, undefined) {
+(function (document) {
 
   'use strict';
 
-  $(function () {
-    // FastShell
+  (function () {
+    var $iconMenu   = document.querySelector('[data-js="icon-menu"]');
+    var $menuMobile = document.querySelector('[data-js="menu-mobile"]');
+    
+    console.log('teste');
   });
 
-})(jQuery, window, document);
+})(document);

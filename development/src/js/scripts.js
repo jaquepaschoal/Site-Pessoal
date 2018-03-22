@@ -1,9 +1,12 @@
-(function ($, window, document, undefined) {
+(function (document) {
 
   'use strict';
 
-  $(function () {
-    // FastShell
+  (function () {
+    var $iconMenu   = document.querySelector('[data-js="icon-menu"]');
+    var $menuMobile = document.querySelector('[data-js="menu-mobile"]');
+    
+    console.log('teste');
   });
 
-})(jQuery, window, document);
+})(document);
