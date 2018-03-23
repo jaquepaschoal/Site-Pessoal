@@ -10,11 +10,18 @@
 
   'use strict';
 
-  (function () {
-    var $iconMenu   = document.querySelector('[data-js="icon-menu"]');
+    var $areaIcon   = document.querySelector('[data-js="area-icon"]');
+    var $icon       = document.querySelector('[data-js="icon"]');
     var $menuMobile = document.querySelector('[data-js="menu-mobile"]');
     
-    console.log('teste');
-  });
+    $areaIcon.addEventListener('click',showMenu);
+
+    function showMenu(){
+      $menuMobile.classList.toggle('display-none');
+      $icon.classList.contains('fa-bars') ? $icon.className = 'far fa-times' : $icon.className = 'far fa-bars';
+    }
+
+    console.log($areaIcon);
+    console.log($menuMobile); 
 
 })(document);
