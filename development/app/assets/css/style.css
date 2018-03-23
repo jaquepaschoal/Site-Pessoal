@@ -404,7 +404,7 @@ textarea {
   list-style: none;
   font-size: 16px;
   margin: 0 1rem;
-  line-height: 4.8rem;
+  line-height: 5.7rem;
   padding: 0 5px;
   text-transform: uppercase;
   -webkit-transition: .1s ease-in;
@@ -418,6 +418,8 @@ textarea {
   text-decoration: none;
   color: #b7b7b7;
   font-weight: bold; }
+  .header-content-menu-box li a:hover {
+    color: #62a8e3; }
 
 .display-none {
   display: none; }
@@ -431,10 +433,10 @@ textarea {
 .header-content-menu-mobile-items {
   position: absolute;
   left: 0;
-  top: 4.2rem;
+  top: 4.9rem;
   width: 100%;
   list-style: none;
-  background-color: rgba(98, 168, 227, 0.5);
+  background-color: rgba(98, 168, 227, 0.9);
   padding: 0; }
 
 .header-content-menu-mobile-items a {
@@ -448,6 +450,28 @@ textarea {
   padding: 1rem 0;
   border-bottom: 1px solid #ffffff;
   padding-left: 3.5rem; }
+
+.banner {
+  display: block;
+  height: 90vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-image: url("../images/banner.png"); }
+
+.profile-photo {
+  width: 348px;
+  height: 241px;
+  overflow: hidden; }
+
+.title {
+  font-family: 'Consolas';
+  font-size: 3rem;
+  letter-spacing: .5rem;
+  color: #62a8e3;
+  text-transform: uppercase; }
 
 html {
   font-size: 62.5%; }

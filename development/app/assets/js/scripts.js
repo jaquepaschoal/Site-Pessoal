@@ -20,8 +20,4 @@
       $menuMobile.classList.toggle('display-none');
       $icon.classList.contains('fa-bars') ? $icon.className = 'far fa-times' : $icon.className = 'far fa-bars';
     }
-
-    console.log($areaIcon);
-    console.log($menuMobile); 
-
 })(document);
