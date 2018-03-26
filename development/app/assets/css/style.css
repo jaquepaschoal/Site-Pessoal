@@ -433,7 +433,7 @@ textarea {
 .header-content-menu-mobile-items {
   position: absolute;
   left: 0;
-  top: 4.9rem;
+  top: 4.1rem;
   width: 100%;
   list-style: none;
   background-color: rgba(98, 168, 227, 0.9);
@@ -453,7 +453,7 @@ textarea {
 
 .banner {
   display: block;
-  height: 90vh;
+  height: 60vh;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -461,17 +461,56 @@ textarea {
   background-attachment: fixed;
   background-image: url("../images/banner.png"); }
 
-.profile-photo {
-  width: 348px;
-  height: 241px;
+.profile {
+  background-color: #edf0f5;
+  padding: 4rem 0; }
+
+.profile-content-photo {
+  outline: 1px solid #ffffff;
+  outline-offset: 1rem;
+  max-width: 80%;
+  min-width: 21.5rem;
   overflow: hidden; }
+
+.profile-content-info-text {
+  font-family: 'Candara';
+  color: #878787;
+  font-size: 15px;
+  font-weight: 600;
+  max-width: 80%; }
+
+.profile-content-info-social a {
+  font-size: 4rem;
+  color: #62a8e3;
+  -webkit-transition: .2s ease-in-out;
+  -o-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  padding: 1rem 2rem; }
+  .profile-content-info-social a:hover {
+    color: #b7b7b7; }
+
+.fatec {
+  padding: 4rem 0; }
+
+.fatec-content-info-text {
+  font-size: 18px; }
 
 .title {
   font-family: 'Consolas';
   font-size: 3rem;
   letter-spacing: .5rem;
   color: #62a8e3;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  max-width: 90%; }
+  .title:after {
+    content: '';
+    width: 7rem;
+    height: 4px;
+    background-color: #62a8e3;
+    display: block; }
+
+.title p {
+  margin-bottom: 1rem; }
 
 html {
   font-size: 62.5%; }
@@ -538,7 +577,25 @@ html {
 /* ******************* */
 /*       TABLET        */
 /* ******************* */
-@media only screen and (min-width: 641px) and (max-width: 1023px) {
+@media only screen and (min-width: 641px) and (max-width: 860px) {
+  .centralizer {
+    width: 98%;
+    margin: 0 auto; }
+  .header-content-menu-mobile {
+    display: none; }
+  .profile-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .profile-content-info {
+    padding-left: 5rem; } }
+
+/* ******************* */
+/*       TABLET        */
+/* ******************* */
+@media only screen and (min-width: 860px) and (max-width: 1023px) {
   .centralizer {
     width: 98%;
     margin: 0 auto; }
@@ -552,5 +609,18 @@ html {
   .centralizer {
     width: 98%;
     margin: 0 auto; }
+  .title {
+    font-size: 2rem; }
   .header-content-menu {
-    display: none; } }
+    display: none; }
+  .profile-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .profile-content-info {
+    text-align: left;
+    padding-left: 2rem; }
+  .profile-content-info-social a {
+    padding: 0 1.5rem; } }

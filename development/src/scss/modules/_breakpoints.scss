@@ -3,6 +3,8 @@
 /* ******************* */
 @media screen and (min-width: 1320px) {
 	.centralizer{ max-width:1300px; max-width:130rem; margin:0 auto; }
+
+	// ---------------------header-----------------------------
 	.header-content-menu-mobile{display: none}
 }
 
@@ -11,6 +13,7 @@
 /* ******************* */
 @media screen and (min-width: 1024px) and (max-width: 1319px) {
 	.centralizer{width:98%; max-width:1280px; max-width:128rem; margin:0 auto; }
+	// ---------------------header-----------------------------
 	.header-content-menu-mobile{display: none}
 
 }
@@ -19,17 +22,44 @@
 /* ******************* */
 /*       TABLET        */
 /* ******************* */
-@media only screen and (min-width: 641px) and (max-width: 1023px) {
+@media only screen and (min-width: 641px) and (max-width: 860px) {
 	.centralizer{width:98%; margin: 0 auto;}
+	// ---------------------header-----------------------------
 	.header-content-menu-mobile{display: none}
+
+	// ---------------------profile-----------------------------
+	.profile-content{flex-wrap: wrap; justify-content: center;}
+	.profile-content-info{ padding-left: 5rem;}
+
 
 }
 
+/* ******************* */
+/*       TABLET        */
+/* ******************* */
+@media only screen and (min-width: 860px) and (max-width: 1023px) {
+	.centralizer{width:98%; margin: 0 auto;}
+	// ---------------------header-----------------------------
+	.header-content-menu-mobile{display: none}
+
+
+
+}
 
 /* ******************* */
 /*       CELULAR       */
 /* ******************* */
 @media only screen and (max-width: 640px) {
 	.centralizer{width: 98%; margin: 0 auto;}
+	.title{font-size: 2rem;}
+
+	// ---------------------header-----------------------------
 	.header-content-menu{display: none;}
-}
+
+	
+	// ---------------------profile-----------------------------
+	.profile-content{flex-wrap: wrap; justify-content: center;}
+	.profile-content-info{ text-align: left;padding-left: 2rem}
+	.profile-content-info-social a {padding:0 1.5rem}
+
+}	
