@@ -1,10 +1,11 @@
 
 .profile{background-color: $color-secundary-4; padding: 4rem 0;}
-.profile-content-photo{outline: 1px solid $color-secundary-2;outline-offset: 1rem;max-width: 80%;min-width: 21.5rem; overflow: hidden}
-.profile-content-info-text{font-family: 'Candara';color:$color-secundary-3; font-size: 15px; font-weight:600;  max-width: 80%;}
+.profile-content-photo{outline: 1px solid $color-secundary-2;outline-offset: 1rem;max-width: 80%;min-width: 21.5rem; overflow: hidden;}
+.profile-content-info-text{font-family: 'Candara';color:$color-secundary-3; font-size: 15px; font-weight:600;  max-width: 80%;  margin: 0}
 .profile-content-info-social a{font-size: 4rem;color:$color-primary-1; transition: .2s ease-in-out; padding: 1rem 2rem;
     &:hover{color:$color-primary-2}
 }
+.profile-content-info{width: 50%;}
 
 
 .fatec{padding: 4rem 0;}

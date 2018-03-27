@@ -109,8 +109,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -211,8 +210,7 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -304,8 +302,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -330,8 +327,7 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -379,14 +375,12 @@ textarea {
 
 .header {
   background-color: #f5f7fa;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); }
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); }
 
 .header-content {
   background-color: #f5f7fa;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
 .header-content-icon {
   padding: 1rem 3rem;
@@ -407,8 +401,6 @@ textarea {
   line-height: 5.7rem;
   padding: 0 5px;
   text-transform: uppercase;
-  -webkit-transition: .1s ease-in;
-  -o-transition: .1s ease-in;
   transition: .1s ease-in; }
   .header-content-menu-box li:hover {
     border-bottom: 3px solid #62a8e3;
@@ -454,7 +446,6 @@ textarea {
 .banner {
   display: block;
   height: 60vh;
-  width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -477,17 +468,19 @@ textarea {
   color: #878787;
   font-size: 15px;
   font-weight: 600;
-  max-width: 80%; }
+  max-width: 80%;
+  margin: 0; }
 
 .profile-content-info-social a {
   font-size: 4rem;
   color: #62a8e3;
-  -webkit-transition: .2s ease-in-out;
-  -o-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   padding: 1rem 2rem; }
   .profile-content-info-social a:hover {
     color: #b7b7b7; }
+
+.profile-content-info {
+  width: 50%; }
 
 .fatec {
   padding: 4rem 0; }
@@ -520,36 +513,28 @@ html {
   width: 130rem; }
 
 .flex {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .flex-y-center {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -ms-flex-align: center;
+      align-items: center; }
 
 .flex-x-center {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .flex-all-center {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 /* ******************* */
 /*    DESKTOP LARGE    */
@@ -586,11 +571,11 @@ html {
   .profile-content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -ms-flex-pack: center;
+        justify-content: center; }
   .profile-content-info {
-    padding-left: 5rem; } }
+    padding-left: 5rem;
+    width: 100%; } }
 
 /* ******************* */
 /*       TABLET        */
@@ -600,7 +585,9 @@ html {
     width: 98%;
     margin: 0 auto; }
   .header-content-menu-mobile {
-    display: none; } }
+    display: none; }
+  .profile-content-info {
+    width: 100%; } }
 
 /* ******************* */
 /*       CELULAR       */
@@ -616,11 +603,11 @@ html {
   .profile-content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -ms-flex-pack: center;
+        justify-content: center; }
   .profile-content-info {
     text-align: left;
-    padding-left: 2rem; }
+    padding-left: 2rem;
+    width: 100%; }
   .profile-content-info-social a {
     padding: 0 1.5rem; } }

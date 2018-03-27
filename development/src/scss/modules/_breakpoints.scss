@@ -29,7 +29,7 @@
 
 	// ---------------------profile-----------------------------
 	.profile-content{flex-wrap: wrap; justify-content: center;}
-	.profile-content-info{ padding-left: 5rem;}
+	.profile-content-info{ padding-left: 5rem; width: 100%;}
 
 
 }
@@ -41,6 +41,9 @@
 	.centralizer{width:98%; margin: 0 auto;}
 	// ---------------------header-----------------------------
 	.header-content-menu-mobile{display: none}
+	
+	// ---------------------profile-----------------------------
+	.profile-content-info{width: 100%;}
 
 
 
@@ -59,7 +62,7 @@
 	
 	// ---------------------profile-----------------------------
 	.profile-content{flex-wrap: wrap; justify-content: center;}
-	.profile-content-info{ text-align: left;padding-left: 2rem}
+	.profile-content-info{ text-align: left;padding-left: 2rem; width: 100%;}
 	.profile-content-info-social a {padding:0 1.5rem}
 
 }	
