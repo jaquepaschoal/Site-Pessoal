@@ -3,7 +3,7 @@
 //   <p><strong>Jaqueline</strong>Paschoal</p>
 // </div>
 
-.title{font-family: 'Consolas'; font-size: 3rem; letter-spacing: .5rem; color:$color-primary-1;text-transform: uppercase;max-width: 90%;
+.title{font-family: 'Consolas'; font-size: 3rem; letter-spacing: .5rem; color:$color-primary-1;text-transform: uppercase;
     &:after{content:'';width:7rem;height: 4px;background-color:$color-primary-1; display: block;}
 }
 
