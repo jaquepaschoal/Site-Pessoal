@@ -1,7 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
 // ---------------------profile-----------------------------
 .profile{background-color: $color-secundary-4; padding: 12rem 0;}
 .profile-content-photo{outline: 1px solid $color-secundary-2;outline-offset: 1rem;max-width: 80%;min-width: 21.5rem; overflow: hidden;margin-right: 5rem;}
-.profile-content-info-text{font-family: 'Candara';color:$color-secundary-3; font-size: 15px; font-weight:600;  max-width: 80%;  margin: 0}
+
+.profile-content-info-text{font-family: 'Roboto', sans-serif;color:$color-secundary-3; font-size: 15px; font-weight:500;  max-width: 80%;  margin: 0}
 .profile-content-info-social a{font-size: 4rem;color:$color-primary-1; transition: .2s ease-in-out; padding: 1rem 2rem;
     &:hover{color:$color-primary-2}
 }
@@ -11,7 +15,7 @@
 
 .fatec{padding: 12rem 0;}
 .fatec-content-info{ width: 50%; padding-left: 2rem;}
-.fatec-content-info-text{font-size: 18px; color: $color-secundary-1; font-family: 'Candara'; font-weight: 550; margin: 5rem 0; }
+.fatec-content-info-text{font-size: 18px; color: $color-secundary-1; font-family: 'Roboto', sans-serif; font-weight: 500; margin: 5rem 0; }
 .fatec-content-info-text p{width: 80%}
 .fatec-content-info-text ul{color:$color-primary-2; padding: 0}
 .fatec-content-info-text ul li{line-height: 4rem;list-style: none;
@@ -22,11 +26,19 @@
     }
 }
 .fatec-content-photo{margin:2rem;outline: 1px solid $color-primary-1;outline-offset: 1rem; min-width: 20%; overflow: hidden;}
+.fatec-content-photo img{max-width: 100%; height: auto;}
 
 // ---------------------projetos-----------------------------
 
-.projects{background-image: url('../images/bg-test.png'); height: 60rem; background-repeat: no-repeat;background-size: cover;background-position: center center;}
+.projects{background-image: url('../images/bg-test.png'); height: 50rem; background-repeat: no-repeat;background-size: cover;background-position: center center;}
 .projects-content-title{flex-direction: column; align-items: center; width: 100%;}
 .projects-content-projects{justify-content: space-around; margin-top: 3rem;}
 .projects-content-projects-item{background-color: $color-secundary-2; width: 28%;}
-.projects-content-projects-item-photo{margin: 0; width: 100%; overflow: hidden; height: 28rem;}
+.projects-content-projects-item-photo{margin: 0; width: 100%; overflow: hidden; }
+.projects-content-projects-item-photo img{max-width: 100%; transition: .3s ease-out; cursor: pointer;
+    &:hover{filter: opacity(.5);}
+}
+.projects-content-projects-item-description{ padding-left: 1rem; padding-top: 1rem;}
+.projects-content-projects-item-description h2{font-family: 'Roboto';letter-spacing: .4rem; font-weight: 500; font-size: 2rem; margin: 0; color: $color-secundary-1;}
+.projects-content-projects-item-description i {color: $color-primary-1; padding-right: .5rem; }
+.projects-content-projects-item-description p {color: $color-primary-1; text-transform: uppercase; font-weight: 800; font-size: 1.2rem;}

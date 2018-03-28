@@ -31,9 +31,11 @@
 	.profile-content-info{ padding-left: 5rem; width: 100%;}
 
 	// ---------------------fatec-----------------------------
-	.fatec-content{flex-wrap: wrap; justify-content: center;}
-	.fatec-content-info{width: 100%; padding-left: 5rem;}
-	.button{width: 85%; margin-left: 2rem;}
+	.fatec{padding: 5rem 0}
+	.fatec-content{flex-wrap: wrap; justify-content: flex-start; padding-left: 4rem;}
+	.fatec-content-info{width: 100%; }
+	.fatec-content-photo{margin-top: 6rem;}
+
 
 }
 
@@ -55,22 +57,28 @@
 /* ******************* */
 @media only screen and (max-width: 640px) {
 	.centralizer{width: 98%; margin: 0 auto;}
-	.title{font-size: 2rem;}
+	.title{font-size: 3rem;  max-width: 100%;;}
+	.title-profile{font-size: 2rem}
 
 	// ---------------------header-----------------------------
 	.header-content-menu{display: none;}
 
 	// ---------------------profile-----------------------------
 	.profile-content{flex-wrap: wrap; justify-content: center;}
-	.profile-content-info{ text-align: left;padding-left: 2rem; width: 100%;margin-left: 0}
+	.profile-content-info{ text-align: left;padding-left: 5rem; width: 100%;margin-left: 0}
 	.profile-content-photo{margin-right: 1rem;}
 	.profile-content-info-social a {padding:0 1.5rem}
 
 	// ---------------------fatec-----------------------------
+	.fatec{padding: 5rem 0}
 	.fatec-content{flex-wrap: wrap; justify-content: center;}
 	.fatec-content-info{width: 100%; padding-left: 5rem; display: flex; flex-direction: column;justify-content: center;}
 	.fatec-content-info-text{margin: 3rem 0}
-	.fatec-content-photo{height: 30rem;}
-	.button{width: 85%; }
+	.fatec-content-photo{margin-top: 6rem; height: 30rem;}
+	.button{width: 50%; margin-left: 0; padding: 2rem 2rem; font-size: 1.5rem;}
+
+	// ---------------------projects-----------------------------
+	.display-none-phone{display: none;}
+	.projects-content-projects-item{width: 70%;}
 
 }	
