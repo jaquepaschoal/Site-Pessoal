@@ -113,8 +113,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */ }
 
 /**
@@ -215,8 +214,7 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -308,8 +306,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -334,8 +331,7 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */ }
@@ -383,14 +379,12 @@ textarea {
 
 .header {
   background-color: #f5f7fa;
-  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); }
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25); }
 
 .header-content {
   background-color: #f5f7fa;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
 
 .header-content-icon {
   padding: 1rem 3rem;
@@ -411,8 +405,6 @@ textarea {
   line-height: 5.7rem;
   padding: 0 5px;
   text-transform: uppercase;
-  -webkit-transition: .1s ease-in;
-  -o-transition: .1s ease-in;
   transition: .1s ease-in; }
   .header-content-menu-box li:hover {
     border-bottom: 3px solid #62a8e3;
@@ -487,12 +479,12 @@ textarea {
 .profile-content-info-social a {
   font-size: 4rem;
   color: #62a8e3;
-  -webkit-transition: .2s ease-in-out;
-  -o-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
   padding: 1rem 2rem; }
   .profile-content-info-social a:hover {
     color: #b7b7b7; }
+  .profile-content-info-social a:first-child {
+    padding-left: 0; }
 
 .profile-content-info {
   width: 50%;
@@ -506,11 +498,12 @@ textarea {
   padding-left: 2rem; }
 
 .fatec-content-info-text {
-  font-size: 18px;
+  font-size: 15px;
   color: #3d3d3d;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
-  margin: 5rem 0; }
+  margin-top: 5rem;
+  margin-bottom: 4rem; }
 
 .fatec-content-info-text p {
   width: 80%; }
@@ -525,9 +518,7 @@ textarea {
   .fatec-content-info-text ul li:before {
     content: "• ";
     color: #62a8e3;
-    /* or whatever color you prefer */
-    font-size: 20px;
-    /* or whatever the bullet size you prefer */ }
+    font-size: 20px; }
 
 .fatec-content-photo {
   margin: 2rem;
@@ -541,21 +532,20 @@ textarea {
   height: auto; }
 
 .projects {
-  background-image: url("../images/bg-test.png");
-  height: 50rem;
+  background-image: url("../images/bg-projects2.jpg");
+  height: 60rem;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center; }
 
 .projects-content-title {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%; }
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  margin-top: 4rem;
+  margin-bottom: 10rem; }
 
 .projects-content-projects {
   -ms-flex-pack: distribute;
@@ -573,13 +563,10 @@ textarea {
 
 .projects-content-projects-item-photo img {
   max-width: 100%;
-  -webkit-transition: .3s ease-out;
-  -o-transition: .3s ease-out;
   transition: .3s ease-out;
   cursor: pointer; }
   .projects-content-projects-item-photo img:hover {
-    -webkit-filter: opacity(0.5);
-            filter: opacity(0.5); }
+    filter: opacity(0.5); }
 
 .projects-content-projects-item-description {
   padding-left: 1rem;
@@ -603,6 +590,71 @@ textarea {
   font-weight: 800;
   font-size: 1.2rem; }
 
+.curriculum {
+  height: 70rem; }
+
+.curriculum-content-title {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  margin: 4rem 0; }
+
+.curriculum-content-items {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.curriculum-content-items-individual {
+  width: 33%;
+  margin: 6rem 0; }
+
+.curriculum-content-items-individual-photo {
+  margin-right: 1.5rem; }
+
+.curriculum-content-items-individual-text h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  color: #3d3d3d;
+  font-weight: 100; }
+
+.curriculum-content-items-individual-text p {
+  width: 80%;
+  font-size: 1.2rem;
+  color: #b7b7b7;
+  padding: 0; }
+
+.curriculum-content-items-individual-text p em {
+  color: #62a8e3; }
+
+.contact {
+  background-image: url("../images/bg-contact2.png");
+  height: 60rem;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 0 0;
+  overflow: hidden; }
+
+.contact-content-items {
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
+
+.contact-content-items-form {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 50%; }
+
+.contact-content-items-form input {
+  margin-top: 1rem;
+  width: 100%; }
+
+.contact-content-items-form textarea {
+  margin: 1rem 0;
+  width: 100%; }
+
+.contact-content-items-form-btn {
+  width: 100%;
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
 .title {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 3rem;
@@ -615,6 +667,16 @@ textarea {
     height: 4px;
     background-color: #62a8e3;
     display: block; }
+  .title strong {
+    font-weight: bold; }
+  .title.clean {
+    color: #ffffff; }
+    .title.clean:after {
+      content: '';
+      width: 7rem;
+      height: 4px;
+      background-color: #ffffff;
+      display: block; }
 
 .title p {
   margin-bottom: 1rem; }
@@ -629,12 +691,25 @@ textarea {
   font-size: 2rem;
   font-family: 'Roboto';
   border-radius: 1px;
-  -webkit-transition: .2s ease-in-out;
-  -o-transition: .2s ease-in-out;
   transition: .2s ease-in-out; }
   .button:hover {
     background-color: #62a8e3;
     color: #ffffff; }
+
+.button-clean {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  font-family: 'Roboto';
+  border-radius: 1px;
+  transition: .2s ease-in-out; }
+  .button-clean:hover {
+    color: #62a8e3;
+    border: 1px solid #62a8e3; }
 
 html {
   font-size: 62.5%; }
@@ -647,36 +722,37 @@ a {
   width: 130rem; }
 
 .flex {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
 .flex-y-center {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  -ms-flex-align: center;
+      align-items: center; }
 
 .flex-x-center {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -ms-flex-pack: center;
+      justify-content: center; }
 
 .flex-all-center {
-  display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+input, textarea {
+  background: none;
+  border: 1px solid #ffffff;
+  outline: none;
+  border-radius: 2px;
+  color: #ffffff;
+  font-size: 1.5rem;
+  padding: 1rem; }
 
 /* ******************* */
 /*    DESKTOP LARGE    */
@@ -710,12 +786,15 @@ a {
     margin: 0 auto; }
   .header-content-menu-mobile {
     display: none; }
+  .banner {
+    background-size: 100%;
+    background-position: 0 52px;
+    height: 40rem; }
   .profile-content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -ms-flex-pack: center;
+        justify-content: center; }
   .profile-content-info {
     padding-left: 5rem;
     width: 100%; }
@@ -724,14 +803,19 @@ a {
   .fatec-content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
     padding-left: 4rem; }
   .fatec-content-info {
     width: 100%; }
   .fatec-content-photo {
-    margin-top: 6rem; } }
+    margin-top: 6rem; }
+  .curriculum-content-items-individual {
+    width: 50%; }
+  .curriculum-content-items-individual-text p {
+    width: 90%; }
+  .curriculum {
+    height: 100rem; } }
 
 /* ******************* */
 /*       TABLET        */
@@ -742,8 +826,18 @@ a {
     margin: 0 auto; }
   .header-content-menu-mobile {
     display: none; }
+  .banner {
+    background-size: 100%;
+    background-position: 0 52px;
+    height: 21rem; }
   .profile-content-info {
-    width: 100%; } }
+    width: 100%; }
+  .curriculum {
+    height: 100rem; }
+  .curriculum-content-items-individual {
+    width: 45%; }
+  .curriculum-content-items-individual-text p {
+    width: 90%; } }
 
 /* ******************* */
 /*       CELULAR       */
@@ -757,14 +851,17 @@ a {
     max-width: 100%; }
   .title-profile {
     font-size: 2rem; }
+  .banner {
+    background-size: 100%;
+    background-position: 0 52px;
+    height: 21rem; }
   .header-content-menu {
     display: none; }
   .profile-content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -ms-flex-pack: center;
+        justify-content: center; }
   .profile-content-info {
     text-align: left;
     padding-left: 5rem;
@@ -779,24 +876,20 @@ a {
   .fatec-content {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -ms-flex-pack: center;
+        justify-content: center; }
   .fatec-content-info {
     width: 100%;
     padding-left: 5rem;
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center; }
   .fatec-content-info-text {
-    margin: 3rem 0; }
+    margin-top: 3rem;
+    margin-bottom: 2rem; }
   .fatec-content-photo {
     margin-top: 6rem;
     height: 30rem; }
@@ -808,4 +901,17 @@ a {
   .display-none-phone {
     display: none; }
   .projects-content-projects-item {
-    width: 70%; } }
+    width: 70%; }
+  .projects-content-projects {
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .curriculum {
+    height: 170rem; }
+  .curriculum-content-title {
+    font-size: 2.5rem; }
+  .curriculum-content-items-individual {
+    width: 100%; }
+  .curriculum-content-items-individual-photo {
+    margin-left: 1rem; }
+  .curriculum-content-items-individual-text p {
+    width: 95%; } }

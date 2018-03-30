@@ -8,6 +8,7 @@
 .profile-content-info-text{font-family: 'Roboto', sans-serif;color:$color-secundary-3; font-size: 15px; font-weight:500;  max-width: 80%;  margin: 0}
 .profile-content-info-social a{font-size: 4rem;color:$color-primary-1; transition: .2s ease-in-out; padding: 1rem 2rem;
     &:hover{color:$color-primary-2}
+    &:first-child{padding-left: 0}
 }
 .profile-content-info{width: 50%;margin-left: 5rem;}
 
@@ -15,23 +16,23 @@
 
 .fatec{padding: 12rem 0;}
 .fatec-content-info{ width: 50%; padding-left: 2rem;}
-.fatec-content-info-text{font-size: 18px; color: $color-secundary-1; font-family: 'Roboto', sans-serif; font-weight: 500; margin: 5rem 0; }
+.fatec-content-info-text{font-size: 15px; color: $color-secundary-1; font-family: 'Roboto', sans-serif; font-weight: 500; margin-top: 5rem; margin-bottom: 4rem; }
 .fatec-content-info-text p{width: 80%}
 .fatec-content-info-text ul{color:$color-primary-2; padding: 0}
 .fatec-content-info-text ul li{line-height: 4rem;list-style: none;
     &:before{
         content: "• ";
-        color: $color-primary-1; /* or whatever color you prefer */
-        font-size: 20px;/* or whatever the bullet size you prefer */
+        color: $color-primary-1;
+        font-size: 20px;
     }
 }
 .fatec-content-photo{margin:2rem;outline: 1px solid $color-primary-1;outline-offset: 1rem; min-width: 20%; overflow: hidden;}
 .fatec-content-photo img{max-width: 100%; height: auto;}
 
-// ---------------------projetos-----------------------------
+// ---------------------projects-----------------------------
 
-.projects{background-image: url('../images/bg-test.png'); height: 50rem; background-repeat: no-repeat;background-size: cover;background-position: center center;}
-.projects-content-title{flex-direction: column; align-items: center; width: 100%;}
+.projects{background-image: url('../images/bg-projects2.jpg'); height: 60rem; background-repeat: no-repeat;background-size: cover;background-position: center center;}
+.projects-content-title{flex-direction: column; align-items: center; width: 100%;margin-top: 4rem; margin-bottom: 10rem;}
 .projects-content-projects{justify-content: space-around; margin-top: 3rem;}
 .projects-content-projects-item{background-color: $color-secundary-2; width: 28%;}
 .projects-content-projects-item-photo{margin: 0; width: 100%; overflow: hidden; }
@@ -42,3 +43,21 @@
 .projects-content-projects-item-description h2{font-family: 'Roboto';letter-spacing: .4rem; font-weight: 500; font-size: 2rem; margin: 0; color: $color-secundary-1;}
 .projects-content-projects-item-description i {color: $color-primary-1; padding-right: .5rem; }
 .projects-content-projects-item-description p {color: $color-primary-1; text-transform: uppercase; font-weight: 800; font-size: 1.2rem;}
+
+// ---------------------curriculum-----------------------------
+.curriculum{height: 70rem;}
+.curriculum-content-title{flex-direction: column; margin: 4rem 0;}
+.curriculum-content-items{width: 100%; flex-wrap: wrap;}
+.curriculum-content-items-individual{ width: 33%; margin: 6rem 0;}
+.curriculum-content-items-individual-photo{margin-right: 1.5rem;}
+.curriculum-content-items-individual-text h2{text-transform: uppercase; font-size: 2rem; color: $color-secundary-1; font-weight: 100}
+.curriculum-content-items-individual-text p{ width: 80%; font-size: 1.2rem; color:$color-primary-2; padding: 0;}
+.curriculum-content-items-individual-text p em{color: $color-primary-1;}
+
+// ---------------------contact-----------------------------
+.contact{background-image: url('../images/bg-contact2.png'); height: 60rem; background-repeat: no-repeat;background-size:100% 100%;background-position: 0 0 ; overflow: hidden;}
+.contact-content-items{justify-content: space-around; }
+.contact-content-items-form{flex-direction: column;  width: 50%;}
+.contact-content-items-form input{ margin-top: 1rem; width: 100%;}
+.contact-content-items-form textarea{margin: 1rem 0; width: 100%;}
+.contact-content-items-form-btn{width: 100%; justify-content: flex-end;}

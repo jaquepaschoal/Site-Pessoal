@@ -5,3 +5,5 @@ a{text-decoration: none;}
 .flex-y-center{display:flex;align-items:center;}
 .flex-x-center{display:flex; justify-content:center;}
 .flex-all-center{display:flex;align-items:center; justify-content:center;}
+
+input,textarea{ background: none; border: 1px solid $color-secundary-2; outline: none; border-radius: 2px; color: $color-secundary-2;font-size: 1.5rem; padding: 1rem;}

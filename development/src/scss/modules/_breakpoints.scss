@@ -15,6 +15,7 @@
 	.centralizer{width:98%; max-width:1280px; max-width:128rem; margin:0 auto; }
 	// ---------------------header-----------------------------
 	.header-content-menu-mobile{display: none}
+
 }
 
 
@@ -25,6 +26,8 @@
 	.centralizer{width:98%; margin: 0 auto;}
 	// ---------------------header-----------------------------
 	.header-content-menu-mobile{display: none}
+	.banner{background-size: 100%;background-position: 0 52px;height: 40rem;}
+
 
 	// ---------------------profile-----------------------------
 	.profile-content{flex-wrap: wrap; justify-content: center;}
@@ -36,6 +39,12 @@
 	.fatec-content-info{width: 100%; }
 	.fatec-content-photo{margin-top: 6rem;}
 
+	
+	// ---------------------curriculum-----------------------------
+	.curriculum-content-items-individual{width: 50%;}
+	.curriculum-content-items-individual-text p{width: 90%;}
+	.curriculum{height: 100rem;}
+
 
 }
 
@@ -46,9 +55,16 @@
 	.centralizer{width:98%; margin: 0 auto;}
 	// ---------------------header-----------------------------
 	.header-content-menu-mobile{display: none}
+	.banner{background-size: 100%;background-position: 0 52px;height: 21rem;}
+
 	
 	// ---------------------profile-----------------------------
 	.profile-content-info{width: 100%;}
+
+		// ---------------------curriculum-----------------------------
+		.curriculum{height: 100rem;}
+		.curriculum-content-items-individual{width: 45%;}
+		.curriculum-content-items-individual-text p{width: 90%;}
 
 }
 
@@ -61,6 +77,7 @@
 	.title-profile{font-size: 2rem}
 
 	// ---------------------header-----------------------------
+	.banner{background-size: 100%;background-position: 0 52px;height: 21rem;}
 	.header-content-menu{display: none;}
 
 	// ---------------------profile-----------------------------
@@ -73,12 +90,20 @@
 	.fatec{padding: 5rem 0}
 	.fatec-content{flex-wrap: wrap; justify-content: center;}
 	.fatec-content-info{width: 100%; padding-left: 5rem; display: flex; flex-direction: column;justify-content: center;}
-	.fatec-content-info-text{margin: 3rem 0}
+	.fatec-content-info-text{margin-top: 3rem; margin-bottom: 2rem;}
 	.fatec-content-photo{margin-top: 6rem; height: 30rem;}
 	.button{width: 50%; margin-left: 0; padding: 2rem 2rem; font-size: 1.5rem;}
 
 	// ---------------------projects-----------------------------
 	.display-none-phone{display: none;}
 	.projects-content-projects-item{width: 70%;}
+	.projects-content-projects{justify-content: center;}
+
+	// ---------------------curriculum-----------------------------
+	.curriculum{height: 170rem;}
+	.curriculum-content-title{font-size: 2.5rem; }
+	.curriculum-content-items-individual{width: 100%;}
+	.curriculum-content-items-individual-photo{margin-left: 1rem}
+	.curriculum-content-items-individual-text p{width: 95%;}
 
 }	
