@@ -626,7 +626,7 @@ textarea {
   color: #62a8e3; }
 
 .contact {
-  background-image: url("../images/bg-contact2.png");
+  background-image: url("../images/bg-contact3.png");
   height: 60rem;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -640,7 +640,8 @@ textarea {
 .contact-content-items-form {
   -ms-flex-direction: column;
       flex-direction: column;
-  width: 50%; }
+  width: 50%;
+  margin-top: -1rem; }
 
 .contact-content-items-form input {
   margin-top: 1rem;
@@ -653,7 +654,41 @@ textarea {
 .contact-content-items-form-btn {
   width: 100%;
   -ms-flex-pack: end;
-      justify-content: flex-end; }
+      justify-content: flex-end;
+  padding: 1rem;
+  margin-right: -1rem; }
+
+.contact-content-items-vcard {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  width: 30%;
+  font-size: 15px;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  height: 20rem; }
+
+.contact-content-items-vcard h2 {
+  margin-bottom: 3rem; }
+  .contact-content-items-vcard h2:after {
+    content: '';
+    width: 7rem;
+    height: 3px;
+    background-color: #62a8e3;
+    display: block;
+    margin-top: .5rem; }
+
+.contact-content-items-vcard div i {
+  color: #62a8e3;
+  padding-right: 1rem; }
+
+.footer {
+  padding: 1rem 0;
+  background-color: #3d3d3d;
+  color: #ffffff;
+  font-size: 1.5rem; }
+
+.footer em {
+  color: #62a8e3; }
 
 .title {
   font-family: 'IBM Plex Mono', monospace;
@@ -752,7 +787,8 @@ input, textarea {
   border-radius: 2px;
   color: #ffffff;
   font-size: 1.5rem;
-  padding: 1rem; }
+  padding: 1rem;
+  width: 100%; }
 
 /* ******************* */
 /*    DESKTOP LARGE    */
@@ -815,7 +851,23 @@ input, textarea {
   .curriculum-content-items-individual-text p {
     width: 90%; }
   .curriculum {
-    height: 100rem; } }
+    height: 100rem; }
+  .contact {
+    height: auto;
+    padding-bottom: 4rem; }
+  .contact-content-items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: center;
+        align-items: center; }
+  .contact-content-items-form {
+    width: 90%;
+    margin-left: -2rem; }
+  .contact-content-items-vcard {
+    width: 90%;
+    margin: .5rem; }
+  .contact-content-items-form-btn {
+    margin-bottom: 6rem; } }
 
 /* ******************* */
 /*       TABLET        */
@@ -837,7 +889,12 @@ input, textarea {
   .curriculum-content-items-individual {
     width: 45%; }
   .curriculum-content-items-individual-text p {
-    width: 90%; } }
+    width: 90%; }
+  .contact-content-items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .contact-content-items-vcard {
+    padding: 2.5rem; } }
 
 /* ******************* */
 /*       CELULAR       */
@@ -914,4 +971,22 @@ input, textarea {
   .curriculum-content-items-individual-photo {
     margin-left: 1rem; }
   .curriculum-content-items-individual-text p {
-    width: 95%; } }
+    width: 95%; }
+  .contact {
+    height: auto;
+    padding-bottom: 4rem; }
+  .contact-content-items {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-align: center;
+        align-items: center; }
+  .contact-content-items-form {
+    width: 90%;
+    margin-left: -2rem; }
+  .contact-content-items-vcard {
+    width: 90%;
+    margin: .5rem; }
+  .contact-content-items-form-btn {
+    margin-bottom: 6rem; }
+  .footer {
+    font-size: 1.2rem; } }

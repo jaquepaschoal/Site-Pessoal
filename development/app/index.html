@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="stylesheet" href="./assets/on-server/css/fontawesome-all.min.css">
   <title>Página Pessoal</title>
@@ -16,11 +17,11 @@
 			</div>
 			<nav class="header-content-menu">
 				<ul class="header-content-menu-box flex">
-					<li><a href="#">Perfil</a></li>
-					<li><a href="#">Fatec</a></li>
-					<li><a href="#">Projetos</a></li>
-					<li><a href="#">Currículo</a></li>
-					<li><a href="#">Contato</a></li>
+					<li><a href="#profile">Perfil</a></li>
+					<li><a href="#fatec">Fatec</a></li>
+					<li><a href="#projects">Projetos</a></li>
+					<li><a href="#curriculum">Currículo</a></li>
+					<li><a href="#contact">Contato</a></li>
 				</ul>
 				</nav>
 				<nav class="header-content-menu-mobile">
@@ -28,17 +29,17 @@
 						<i data-js="icon" class="far fa-bars"></i>
 					</div>
 					<ul data-js="menu-mobile" class="header-content-menu-mobile-items display-none">
-						<a href="#"><li>Perfil</li></a>
-						<a href="#"><li>Fatec</li></a>
-						<a href="#"><li>Projetos</li></a>
-						<a href="#"><li>Currículo</li></a>
-						<a href="#"><li>Contato</li></a>
+						<a href="#profile"><li>Perfil</li></a>
+						<a href="#fatec"><li>Fatec</li></a>
+						<a href="#projects"><li>Projetos</li></a>
+						<a href="#curriculum"><li>Currículo</li></a>
+						<a href="#contact"><li>Contato</li></a>
 					</ul>
 				</nav>
 		</div>
 	</header>
 	<div class="banner"></div>
-	<section class="profile">
+	<section class="profile" id="profile">
 		<div class="profile-content centralizer flex-x-center">
 			<figure class="profile-content-photo flex-all-center">
 				<img src="./assets/images/profile1-1.jpg" alt="">
@@ -66,7 +67,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="fatec">
+	<section class="fatec" id="fatec">
 		<div class="fatec-content centralizer flex-x-center">
 			<div class="fatec-content-info">
 				<div class="title">
@@ -91,7 +92,7 @@
 			</figure>
 		</div>
 	</section>
-	<section class="projects flex-x-center">
+	<section class="projects flex-x-center" id="projects">
 		<div class="projects-content centralizer">
 			<div class="projects-content-title  title clean flex-x-center">
 				<p><strong>Meus</strong>Projetos</p>
@@ -145,7 +146,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="curriculum">
+	<section class="curriculum" id="curriculum">
 		<div class="curriculum-content centralizer">
 			<div class="curriculum-content-title title flex-all-center">
 					<p><strong>Curriculum</strong>Vitae</p>
@@ -239,7 +240,7 @@
 
 		</div>
 	</section>
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="contact-content centralizer" >
 				<div class="projects-content-title  title clean flex-x-center">
 					<p><strong>Contate-</strong>me</p>
@@ -248,18 +249,27 @@
 					<form action="" class="contact-content-items-form flex">
 						<input type="text" placeholder="Nome">
 						<input type="text" placeholder="E-mail">
-						<textarea name="" id="" cols="30" rows="10"></textarea>
+						<textarea name="" id="" cols="30" rows="10" placeholder="Mensagem..."></textarea>
 						<div class="contact-content-items-form-btn flex">
 								<button class="button-clean">Enviar</button>
 						</div>
 					</form>
-					<aside class="contact-content-items-vcard">
-						VCARD
+					<aside class="contact-content-items-vcard flex-all-center">
+						<div>
+								<h2>Jaqueline Paschoal</h2>
+								<p><i class="fal fa-envelope"></i>jaque-paschoal@hotmail.com</p>
+								<p><i class="far fa-map-marker"></i>Abolição, 780</p>
+								<p><i class="fal fa-map"></i>Mineiros do Tietê, São Paulo, Brasil</p>	
+						</div>
 					</aside>
 				</div>
 
 		</div>
 	</section>
+	<footer class="footer flex-all-center">
+		<p>2018 © Jaqueline  Paschoal All Rights Reserved | <em>Privacy Policy</em></p>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="./assets/js/scripts.js"></script>
 </body>
 </html>

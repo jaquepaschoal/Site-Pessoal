@@ -45,6 +45,13 @@
 	.curriculum-content-items-individual-text p{width: 90%;}
 	.curriculum{height: 100rem;}
 
+	// ---------------------contact-----------------------------
+	.contact{height: auto; padding-bottom: 4rem;}
+	.contact-content-items{flex-wrap: wrap; align-items: center;}
+	.contact-content-items-form{ width: 90%; margin-left: -2rem;}
+	.contact-content-items-vcard{width: 90%; margin: .5rem;}
+	.contact-content-items-form-btn{margin-bottom: 6rem;}
+
 
 }
 
@@ -61,10 +68,14 @@
 	// ---------------------profile-----------------------------
 	.profile-content-info{width: 100%;}
 
-		// ---------------------curriculum-----------------------------
+	// ---------------------curriculum-----------------------------
 		.curriculum{height: 100rem;}
 		.curriculum-content-items-individual{width: 45%;}
 		.curriculum-content-items-individual-text p{width: 90%;}
+
+	// ---------------------contact-----------------------------
+	.contact-content-items{flex-wrap: wrap}
+	.contact-content-items-vcard{ padding: 2.5rem;}
 
 }
 
@@ -106,4 +117,13 @@
 	.curriculum-content-items-individual-photo{margin-left: 1rem}
 	.curriculum-content-items-individual-text p{width: 95%;}
 
+	// ---------------------contact-----------------------------
+	.contact{height: auto; padding-bottom: 4rem;}
+	.contact-content-items{flex-wrap: wrap; align-items: center;}
+	.contact-content-items-form{ width: 90%; margin-left: -2rem;}
+	.contact-content-items-vcard{width: 90%; margin: .5rem;}
+	.contact-content-items-form-btn{margin-bottom: 6rem;}
+
+	// ---------------------footer-----------------------------
+	.footer{font-size: 1.2rem;}
 }	
