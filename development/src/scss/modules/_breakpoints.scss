@@ -107,8 +107,10 @@
 
 	// ---------------------projects-----------------------------
 	.display-none-phone{display: none;}
-	.projects-content-projects-item{width: 70%;}
-	.projects-content-projects{justify-content: center;}
+	.projects{height: auto; padding-bottom: 4rem;}
+	.projects-content-projects-item{width: 70%; margin-bottom: 2rem;}
+	.projects-content-projects{justify-content: center; flex-wrap: wrap;}
+ 
 
 	// ---------------------curriculum-----------------------------
 	.curriculum{height: 170rem;}

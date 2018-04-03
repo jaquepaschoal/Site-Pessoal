@@ -55,7 +55,7 @@
 .curriculum-content-items-individual-text p em{color: $color-primary-1;}
 
 // ---------------------contact-----------------------------
-.contact{background-image: url('../images/bg-contact3.png'); height: 60rem; background-repeat: no-repeat;background-size:100% 100%;background-position: 0 0 ; overflow: hidden;}
+.contact{background-image: url('../images/bg-contact.png'); height: 60rem; background-repeat: no-repeat;background-size:cover;background-position: 0 0 ; overflow: hidden;}
 .contact-content-items{justify-content: space-around; }
 .contact-content-items-form{flex-direction: column;  width: 50%; margin-top: -1rem;}
 .contact-content-items-form input{ margin-top: 1rem; width: 100%;}
