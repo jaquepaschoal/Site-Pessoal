@@ -13,7 +13,7 @@
 
 // mobile
 .display-none{display: none;}
-.header-content-menu-mobile-icon{font-size: 25px;  padding-right: 1rem; color:$color-primary-1;cursor: pointer; }
+.header-content-menu-mobile-icon{font-size: 25px;  padding-right: 3rem; color:$color-primary-1;cursor: pointer; }
 .header-content-menu-mobile-items{ position: absolute; left: 0; top:4.1rem; width: 100%; list-style: none; background-color: rgba(98,168,227,0.9);padding:0}
 .header-content-menu-mobile-items a{text-decoration: none; text-transform: uppercase; font-weight: bold; font-size: 15px; color:$color-secundary-2;}
 .header-content-menu-mobile-items a li{padding: 1rem 0; border-bottom: 1px solid $color-secundary-2; padding-left: 3.5rem;}
