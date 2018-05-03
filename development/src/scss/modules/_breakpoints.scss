@@ -51,7 +51,9 @@
 	.contact-content-items-form{ width: 90%; margin-left: -2rem;}
 	.contact-content-items-vcard{width: 90%; margin: .5rem;}
 	.contact-content-items-form-btn{margin-bottom: 6rem;}
-
+	
+	// ---------------------error-----------------------------
+	.error-text {padding: 1rem;}
 
 }
 
@@ -76,6 +78,9 @@
 	// ---------------------contact-----------------------------
 	.contact-content-items{flex-wrap: wrap}
 	.contact-content-items-vcard{ padding: 2.5rem;}
+
+	// ---------------------error-----------------------------
+	.error-text {padding: 2rem;}
 
 }
 
@@ -128,4 +133,9 @@
 
 	// ---------------------footer-----------------------------
 	.footer{font-size: 1.2rem;}
+
+	// ---------------------error-----------------------------
+	.error-text {font-size: 2rem;}
+	.error-title {font-size: 15rem;}
+
 }	

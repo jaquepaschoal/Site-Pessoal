@@ -1,0 +1,16 @@
+
+.error {width: 100%;height: 100%; background-color: $color_secundary-4}
+.column { flex-direction: column}
+.error-title { font-size: 20rem; margin: 0; font-weight: 100; color:$color_secundary-3}
+.error-text { font-size: 4rem; margin-top: 3rem; color:$color_primary-1; text-align: center;
+  &:after {content: '|'; opacity: 1; animation: pisca .7s infinite}
+}
+.btn-error {cursor:pointer;text-transform: uppercase; color:$color-primary-1;border:1px solid $color-primary-1; background-color: transparent; padding: 2rem 5rem; font-size: 2rem; font-family: 'Roboto'; border-radius: 1px;transition: .2s ease-in-out;
+  &:hover{background-color: $color-primary-1; color:$color-secundary-2}
+}
+
+@keyframes pisca {
+  0% { opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}

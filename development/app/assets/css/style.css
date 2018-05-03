@@ -694,6 +694,54 @@ textarea {
 .footer em {
   color: #62a8e3; }
 
+.error {
+  width: 100%;
+  height: 100%;
+  background-color: #edf0f5; }
+
+.column {
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.error-title {
+  font-size: 20rem;
+  margin: 0;
+  font-weight: 100;
+  color: #878787; }
+
+.error-text {
+  font-size: 4rem;
+  margin-top: 3rem;
+  color: #62a8e3;
+  text-align: center; }
+  .error-text:after {
+    content: '|';
+    opacity: 1;
+    animation: pisca .7s infinite; }
+
+.btn-error {
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #62a8e3;
+  border: 1px solid #62a8e3;
+  background-color: transparent;
+  padding: 2rem 5rem;
+  font-size: 2rem;
+  font-family: 'Roboto';
+  border-radius: 1px;
+  transition: .2s ease-in-out; }
+  .btn-error:hover {
+    background-color: #62a8e3;
+    color: #ffffff; }
+
+@keyframes pisca {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .title {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 3rem;
@@ -871,7 +919,9 @@ input, textarea {
     width: 90%;
     margin: .5rem; }
   .contact-content-items-form-btn {
-    margin-bottom: 6rem; } }
+    margin-bottom: 6rem; }
+  .error-text {
+    padding: 1rem; } }
 
 /* ******************* */
 /*       TABLET        */
@@ -898,7 +948,9 @@ input, textarea {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap; }
   .contact-content-items-vcard {
-    padding: 2.5rem; } }
+    padding: 2.5rem; }
+  .error-text {
+    padding: 2rem; } }
 
 /* ******************* */
 /*       CELULAR       */
@@ -999,4 +1051,8 @@ input, textarea {
   .contact-content-items-form-btn {
     margin-bottom: 6rem; }
   .footer {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .error-text {
+    font-size: 2rem; }
+  .error-title {
+    font-size: 15rem; } }
